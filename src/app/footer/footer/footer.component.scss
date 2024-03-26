@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+.titillium-web-semibold {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 0; /* Espaçamento interno do rodapé, opcional */
+  z-index: 1000; /* Ajuste o valor do z-index conforme necessário */
+}
+
+.footer img {
+  margin-left: 16px;
+}
+
+.logo-toolbar {
+  width: 45px;
+  height: auto;
+  align-items: right;
+}
+

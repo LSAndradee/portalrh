@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+
+mat-toolbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.div1 {
+  width: 20%;
+  // background-color: red;
+  display: flex;
+  align-items: center;
+}
+
+.div2 {
+  width: 20%;
+  display: flex;
+  // background-color: red;
+}
+
+.titulo-toolbar {
+  display: flex;
+  align-items: center;
+}
+
+.titulo-toolbar span {
+  margin-left: auto; /* Empurra o título para a direita, centralizando-o */
+}
+
+.spacer {
+  flex: 1; /* Este elemento de espaço preencherá o espaço restante */
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo-toolbar {
+  width: 45px;
+  height: auto;
+}
+
+.menu-icon {
+  font-size: 33px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  color: white;
+}
+
+.titillium-web-semibold {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.custom-menu-overlay {
+  position: absolute;
+  top: 55px; /* Ajuste conforme necessário para a posição do seu toolbar */
+  left: 0;
+  background-color: rgb(38, 33, 63); /* Cor de fundo do menu */
+  border: 0px solid #ccc;
+  padding: 10px;
+  z-index: 1000; /* Certifique-se de que o menu esteja acima de outros elementos */
+  border-radius: 10px; /* Valor de arredondamento da borda */
+}
+
+.custom-menu-overlay a {
+  display: block;
+  color: white; /* Cor do texto do link */
+  text-decoration: none;
+  margin-bottom: 5px;
+}
+
+.custom-menu-overlay a:hover {
+  color:  rgb(173, 7, 59); /* Cor do texto do link ao passar o mouse */
+}

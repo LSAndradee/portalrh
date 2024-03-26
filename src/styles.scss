@@ -1,0 +1,67 @@
+@use '@angular/material' as mat;
+@import '@angular/material/theming';
+@include mat-core();
+@import '@angular/material';
+
+
+$custom-app-primary-palette: (
+  50: #E5E4E8,
+  100: #BEBCC5,
+  200: #93909F,
+  300: #676479,
+  400: #47425C,
+  500: #26213F,
+  600: #221D39,
+  700: #1C1831,
+  800: #171429,
+  900: #0D0B1B,
+  contrast: (
+    50: #000,
+    100: #000,
+    200: #000,
+    300: #fff,
+    400: #fff,
+    500: #fff,
+    600: #fff,
+    700: #fff,
+    800: #fff,
+    900: #fff,
+  ),
+);
+
+$custom-app-secondary-palette: (
+  50: #F5E1E7,
+  100: #E6B5C4,
+  200: #D6839D,
+  300: #C65176,
+  400: #B92C58,
+  500: #AD073B,
+  600: #A60635,
+  700: #9C052D,
+  800: #930426,
+  900: #830219,
+  contrast: (
+    50: #000,
+    100: #000,
+    200: #000,
+    300: #fff,
+    400: #fff,
+    500: #fff,
+    600: #fff,
+    700: #fff,
+    800: #fff,
+    900: #fff,
+  ),
+);
+
+
+$custom-app-primary: mat.define-palette($custom-app-primary-palette);
+$custom-app-secondary: mat-palette($custom-app-secondary-palette);
+$custom-app-warn: mat-palette($mat-red);
+
+$custom-theme: mat-light-theme($custom-app-primary, $custom-app-secondary, $custom-app-warn);
+
+@include angular-material-theme($custom-theme);
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

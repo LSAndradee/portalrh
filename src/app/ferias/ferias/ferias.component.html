@@ -1,0 +1,55 @@
+<div class="back-button-container">
+  <button  mat-icon-button routerLink="/">
+    <mat-icon>arrow_back</mat-icon>
+  </button>
+</div>
+<form (submit)="check()">
+<div class="upload-container titillium-web-semibold">
+  <div class="upload-form">
+    <div class="message">Preencha os campos abaixo para enviar a solicitação de férias:</div>
+    <div class="text-fields">
+      <br>
+      <mat-form-field class="mat-input-element mat-form-field titillium-web-semibold">
+        <input matInput placeholder="Nome" class="text-input" required>
+      </mat-form-field>
+      <br>
+      <mat-form-field class="mat-input-element mat-form-field titillium-web-semibold">
+        <input matInput placeholder="CPF" [(ngModel)]="cpf" cpfMask required>
+      </mat-form-field>
+      <br>
+      <br>
+      <mat-form-field  class="mat-input-element mat-form-field titillium-web-semibold">
+        <mat-label>Setor</mat-label>
+        <mat-select>
+          <mat-option value="one">TI</mat-option>
+          <mat-option value="two">Importação</mat-option>
+          <mat-option value="three">Recursos Humano</mat-option>
+        </mat-select>
+      </mat-form-field>
+      <br>
+      <!-- <mat-form-field class="mat-input-element mat-form-field titillium-web-semibold">
+        <input matInput [matDatepicker]="picker" placeholder="Escolha uma data">
+        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+      </mat-form-field> -->
+      <mat-form-field appearance="fill" class="mat-input-element mat-form-field titillium-web-semibold">
+        <mat-label>Entre com a data desejada</mat-label>
+        <mat-date-range-input [rangePicker]="picker">
+          <input matStartDate placeholder="Start date">
+          <input matEndDate placeholder="End date">
+        </mat-date-range-input>
+        <mat-hint>DD/MM/YYYY – DD/MM/YYYY</mat-hint>
+        <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-date-range-picker #picker></mat-date-range-picker>
+      </mat-form-field>
+      <br>
+    </div>
+    <br>
+    <br>
+    <br>
+    <button mat-raised-button type="submit" class="upload-button" color="accent">Enviar Solicitação</button>
+    <br>
+  </div>
+</div>
+</form>
+<br>

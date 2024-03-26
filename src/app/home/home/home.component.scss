@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+
+
+.titillium-web-semibold {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+
+mat-grid-tile {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.grid-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh; /* Ajusta a altura do contêiner para preencher a altura da janela */
+}
+
+.custom-grid {
+  width: 80em; /* Defina o tamanho desejado para o grid */
+  height: 5em; /* Defina o tamanho desejado para o grid */
+
+}
+
+.grid-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer; /* Altera o cursor ao pairar sobre o item */
+  font-size: 60px; /* Aumenta o tamanho da fonte */
+  border-radius: 20px;
+}
+
+.grid-item:hover {
+  background-color: #f2f2f2; /* Altera a cor de fundo ao pairar sobre o item */
+}
+
+.grid-link {
+  text-decoration: none; /* Remove sublinhado de link */
+  color: inherit; /* Usa a cor padrão do texto */
+}

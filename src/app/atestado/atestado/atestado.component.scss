@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+.upload-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-height: 70vh;
+}
+
+.upload-form {
+  text-align: center; /* Alinha o conteúdo do formulário ao centro */
+}
+
+.message {
+  margin-bottom: 10px;
+}
+
+.file-input {
+  display: none;
+}
+
+.upload-button {
+  background-color: rgb(173, 7, 59);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* Defina uma classe para os campos de entrada */
+.mat-input-element {
+  width: 100%; /* Garante que todos os campos tenham a largura total do form-field */
+  box-sizing: border-box; /* Inclui a largura do preenchimento e da borda no tamanho total */
+}
+
+/* Defina uma classe para os mat-form-field */
+.mat-form-field {
+  width: 100%; /* Garante que o form-field tenha a largura total do seu contêiner */
+  box-sizing: border-box; /* Inclui a largura do preenchimento e da borda no tamanho total */
+}
+
+/* Se desejar, você também pode ajustar o tamanho da fonte e outras propriedades */
+.mat-form-field, .mat-input-element {
+  font-size: 16px; /* Tamanho da fonte */
+  /* Outras propriedades de estilo, se necessário */
+}
+
+.titillium-web-semibold {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}

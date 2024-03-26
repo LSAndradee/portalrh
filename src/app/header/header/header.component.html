@@ -1,0 +1,29 @@
+<header>
+  <mat-toolbar color="primary">
+    <div class="div1">
+      <button mat-icon-button class="menu-icon" aria-label="Menu" (click)="toggleMenu()">
+        <mat-icon>{{ iconeMenu }}</mat-icon>
+      </button>
+      <div *ngIf="menuAberto" class="custom-menu-overlay titillium-web-semibold">
+        <!-- Conteúdo do menu aqui -->
+        <a routerLink="/pagina1">Home</a>
+        <a routerLink="/pagina2">Portal de Chamados</a>
+        <a routerLink="/pagina2">Sala de Reunião - Reservas</a>
+        <!-- Adicione mais links conforme necessário -->
+      </div>
+      <div class="logo-container">
+        <img class="logo-toolbar" src="../assets/img/logover.png">
+        <span class="titillium-web-semibold" >Eurotextil</span>
+      </div>
+    </div>
+    <div class="titulo-toolbar titillium-web-semibold">
+      <span>Portal RH</span>
+    </div>
+    <div class="div2">
+      <div class="spacer"></div>
+      <button mat-icon-button aria-label="Example icon-button with heart icon">
+        <mat-icon class="menu-icon">person</mat-icon>
+      </button>
+    </div>
+  </mat-toolbar>
+</header>
